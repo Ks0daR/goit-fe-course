@@ -1,0 +1,18 @@
+* {
+  color: blue;
+}
+/* Непосредственный потомок*/
+ul > li {
+  color: brown;
+}
+/*потомок на любом уровне вложенности*/
+div p {
+    color: darkorange
+}
+
+/*Седектор класса*/
+.wrapper {
+    width: 900;
+    margin: auto;
+    background-color: antiquewhite
+}
