@@ -48,6 +48,7 @@
   margin-right: 60px;
 }
 .box-text {
+  text-align: left;
   margin-bottom: 15px;
   width: 400px;
   font-size: 14px;
@@ -60,6 +61,7 @@
   padding-bottom: 20px;
 }
 .subtitle {
+  text-align: left;
   margin-bottom: 15px;
   font-family: sans-serif;
   font-size: 14px;
@@ -69,6 +71,7 @@
 }
 
 .title {
+  text-align: left;
   font-family: serif;
   font-size: 30px;
   color: rgb(98, 98, 98);
