@@ -5,6 +5,7 @@
 
 .wrapper {
   width: 1100px;
+  margin: auto;
   padding: 15px;
 }
 .menu-size {
