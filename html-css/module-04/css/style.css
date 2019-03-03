@@ -4,114 +4,68 @@
 }
 
 .wrapper {
-  width: 1100px;
+  width: 900px;
   margin: auto;
-  padding: 15px;
-}
-.menu-size {
-  width: 320px;
-  display: inline-block;
+  
 }
 
-.menu {
-  display: inline-block;
-  width: 750px;
-  text-align: right;
+.list {
   list-style: none;
-  margin-bottom: 50px;
+  padding-left: 150px;
 }
-.menu-item {
+
+.list-element {
   display: inline-block;
-  text-transform: uppercase;
-}
-.menu-link {
-  text-decoration: none;
-  margin-right: 30px;
-  color: #000;
-}
-.menu-link:hover {
-  color: #1abc9c;
-}
-.card-box {
-  font-size: 0px;
-}
-.title {
-  font-size: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: sans-serif;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
-.title:after {
-  content: "";
-  background-color: #1abc9c;
-  width: 134px;
-  height: 7px;
-  display: block;
-  margin: 20px auto;
-}
-.card {
-  display: inline-block;
 
-  margin: 0 10px;
-  margin-bottom: 25px;
-}
-.card-img {
-  width: 250px;
+.list-link {
   display: block;
-  /* margin: 0 15px; */
-}
-.card-link {
+  width: 150px;
+  text-align: center;
+  color: gray;
   text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
   text-transform: uppercase;
-
-  color: #fff;
   font-family: sans-serif;
-}
-.text-info {
-  display: inline-block;
-  background-color: #000;
-  width: 201px;
-}
-.price {
-  display: inline-block;
-  font-size: 20px;
-  background-color: #999;
-  font-family: sans-serif;
-  padding: 0 5px;
-}
-.card-link:hover .text-info {
-  background: #1abc9c;
-}
-.news-card {
-  width: 330px;
-  display: inline-block;
-  margin: 0 15px;
 }
 
-.news-title {
-  font-size: 16px;
+.list-link:hover {
+  color: blue;
+}
+
+.box {
+  display: inline-block;
+  margin-bottom: 100px;
+  /* width: (49%); */
+}
+.box-mr {
+  margin-right: 50px;
+  margin-left: 25px;
+}
+.box-text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 400px;
+  font-size: 14px;
+  font-family: "PlayfairDisplay";
+  color: rgb(98, 98, 98);
+  line-height: 1.714;
+  text-align: left;
+}
+.subtitle {
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-family: sans-serif;
-  color: #000;
+  font-size: 14px;
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
 }
-.news-title:after {
-  content: "";
-  background-color: #1abc9c;
-  width: 100px;
-  height: 6px;
-  display: block;
-  margin: 10px 0;
-}
-.news-text {
-  font-size: 12px;
-  font-family: sans-serif;
-}
-.link-news{
-    text-decoration: none;
-}
-.btn-news{
-background: #1abc9c;
-padding: 15px;
+
+.title {
+  font-family: serif;
+  font-size: 30px;
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
 }
