@@ -71,7 +71,8 @@
 }
 .card-img {
   width: 250px;
-  /* overflow: hidden; */
+  height: 280px;
+  overflow: hidden;
 }
 .text-info {
   color: #fff;
