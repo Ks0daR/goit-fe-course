@@ -1,5 +1,11 @@
 .wrapper {
     font-family: sans-serif;
     font-size: 20px;
-    background-color: aqua
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+.work-list{
+    display: inline-block;
+    margin: 0 15px;
 }
