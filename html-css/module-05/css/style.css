@@ -94,7 +94,7 @@
   width: 1170px;
   padding: 15px;
   margin: auto;
-  text-align: center;
+  /* text-align: center; */
   font-size: 0;
   position: relative;
 }
@@ -127,14 +127,14 @@
 }
 .item-name {
   float: left;
-  width: 210px;
+  width: 195px;
   background: #000;
   font-size: 18px;
   font-family: "Roboto";
   color: rgb(255, 255, 255);
   text-transform: uppercase;
-  text-align: left;
-  padding: 5px 0;
+  /* text-align: left; */
+  padding: 5px 0 5px 15px;
 }
 .item-price {
   float: right;
@@ -165,7 +165,7 @@
   top: 10px;
   left: 10px;
   right: 10px;
-  bottom: 30px;
+  bottom: 40px;
   background-color: #737373;
 }
 .btn-shop {
@@ -204,12 +204,23 @@
   z-index: 1;
   width: 166px;
   background: #323232;
+  z-index: 1;
+}
+.btn-icon-card{
+ position: absolute;
+ top: 10px;
+ left: 10px;
+}
+.add{
+  position: absolute;
+  top: 16px;
+  right: 16px;
   font-size: 14px;
   font-family: "OpenSans";
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   text-align: center;
-  z-index: 1;
+
 }
 .footer-bgnd {
   position: relative;
