@@ -106,3 +106,22 @@
   width: 950px;
   margin: auto;
 }
+.social{
+  display: flex;
+  justify-content: space-between;
+}
+.modal{
+  opacity: 0;
+}
+.social-icons{
+  display: flex;
+  /* justify-content: center; */
+  list-style: none;
+}
+.sc-ico-pick{
+  background: #fce38a;
+  width: 56px;
+  height: 56px;
+  border: none;
+margin: 0 1px;
+}
