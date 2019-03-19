@@ -172,13 +172,31 @@
   text-align: center;
 }
 .bot {
-  padding: 28px;
+  padding-top: 28px;
   border-top: 1px solid #e5e5e5;
 }
 .info {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
-.form-submint {
-  width: 500px;
+.input-form{
+  height: 38px;
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    text-align: left;  
+}
+.button-form{
+  width: 150px;
+  height: 40px;
+  border: none;
+  background: #95e1d3;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
 }
