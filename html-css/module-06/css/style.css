@@ -21,23 +21,29 @@
 }
 .menu-item {
   list-style: none;
-  margin: 0 25px;
+  padding: 0 25px;
+}
+.menu-link{
   font-size: 14px;
+  text-decoration: none;
   font-family: "Montserrat";
   color: #95e1d3;
   text-transform: uppercase;
-  cursor: pointer;
+  transition: opacity, color 0.4s linear;
 }
-.menu-item:active {
+.menu-link:hover{
+  color: #f38181;
+}
+.menu-link:after{
   content: "";
-  background-color: #f38181;
-  height: 4px;
-  width: 52px;
-  margin-top: 12px;
+  margin-top: 10px;
+  transition: width 0.4s;
+  border-bottom: 4px solid #f38181;
+  width: 0;
   display: block;
 }
-.menu-item:hover {
-  color: #f38181;
+.menu-link:hover::after{
+  width: 100%;
 }
 .tegline {
   margin: 100px 0 30px;
@@ -104,24 +110,75 @@
   color: rgb(153, 153, 153);
   text-align: center;
   width: 950px;
-  margin: auto;
+  margin: 0 auto 90px;
 }
-.social{
+.social {
   display: flex;
   justify-content: space-between;
 }
-.modal{
+.social-profile {
+  position: relative;
+  height: 600px;
+}
+.modal {
+  position: absolute;
+  overflow: visible;
+  width: 380px;
+  height: 470px;
+  background: linear-gradient(180deg, #ef8b8a, #e7d082);
+  opacity: 1;
+  top: -10px;
+  left: -10px;
   opacity: 0;
+  transition-duration: .4s;
 }
-.social-icons{
+.social-icons {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   list-style: none;
+  position: absolute;
+  top: 208px;
+  left: 64px;
+  opacity: 0;
+  transition-duration: .4s;
 }
-.sc-ico-pick{
+.social-profile:hover .modal {
+  opacity: 0.9;
+}
+.social-profile:hover .social-icons {
+  opacity: 1;
+}
+.sc-ico-pick {
   background: #fce38a;
   width: 56px;
   height: 56px;
   border: none;
-margin: 0 1px;
+  margin: 0 1px;
+  cursor: pointer;
+}
+.social-name {
+  margin: 38px 0 20px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  text-align: center;
+}
+.social-position {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  text-align: center;
+}
+.bot {
+  padding: 28px;
+  border-top: 1px solid #e5e5e5;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.form-submint {
+  width: 500px;
 }
