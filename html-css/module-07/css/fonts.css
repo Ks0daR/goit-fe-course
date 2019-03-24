@@ -1,6 +1,6 @@
 /* roboto-slab-regular - latin */
 @font-face {
-    font-family: 'Roboto Slab';
+    font-family: 'RobotoSlab';
     font-style: normal;
     font-weight: 400;
     src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
@@ -27,7 +27,7 @@
   }
   /* Droid-Serif Italic */
   @font-face {
-    font-family: 'droid_serifitalic';
+    font-family: 'DroidSerif';
     src: url('../fonts/DroidSerif-Italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
