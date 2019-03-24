@@ -1,0 +1,5 @@
+montserrat bold
+droidserif italic
+robotoslab regular
+montserrat regular
+wisdom script
