@@ -113,8 +113,11 @@
 }
 .interaction {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 940px;
+  height: 216px;
   position: absolute;
   top: 256px;
   left: 50%;
@@ -131,10 +134,48 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: left;
-  margin-bottom: 30px;
-  border-radius: 3%;
+  border-radius: 5px;
 }
-.input-area{
-    width: 456px;
-    height: 214px;
+.input-area {
+  resize: none;
+  width: 456px;
+  height: 214px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(187, 187, 187);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+.input-area::placeholder{
+  margin: 15px;
+}
+.interaction input[type="email"]:invalid,
+.interaction input[type="text"]:invalid {
+  border-color: #900;
+}
+.interaction input[type="email"]:valid,
+.interaction input[type="text"]:valid {
+  border-color: #090;
+}
+.submint {
+  align-self: flex-end;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+.submint {
+  background-color: #fed136;
+  border-radius: 5px;
+  border-color: #fed136;
+  width: 240px;
+  height: 66px;
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
