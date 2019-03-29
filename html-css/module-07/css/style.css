@@ -22,7 +22,7 @@
 }
 .menu-link {
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: #222;
   text-transform: uppercase;
   text-align: center;
@@ -33,7 +33,7 @@
 }
 .title {
   font-size: 40px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: rgb(34, 34, 34);
   font-weight: bold;
   text-transform: uppercase;
@@ -42,7 +42,7 @@
 }
 .subtitle {
   font-size: 16px;
-  font-family: "DroidSerif";
+  font-family: "DroidSerif", serif;
   color: rgb(119, 119, 119);
   font-style: italic;
   text-align: center;
@@ -66,7 +66,7 @@
 }
 .card-title {
   font-size: 18px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: rgb(34, 34, 34);
   font-weight: bold;
   text-align: center;
@@ -84,9 +84,7 @@
   width: auto;
   background-color: #222;
   height: 626px;
-}
-.background-img {
-  transform: translate(100%, 25%);
+  text-align: right;
 }
 .interaction-text {
   position: absolute;
@@ -97,7 +95,7 @@
 }
 .icn-title {
   font-size: 40px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
@@ -106,7 +104,7 @@
 }
 .icn-subtitle {
   font-size: 16px;
-  font-family: "DroidSerif";
+  font-family: "DroidSerif", serif;
   color: rgb(119, 119, 119);
   font-style: italic;
   text-align: center;
@@ -129,7 +127,7 @@
   width: 456px;
   height: 54px;
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: rgb(187, 187, 187);
   font-weight: bold;
   text-transform: uppercase;
@@ -142,21 +140,18 @@
   height: 214px;
   border-radius: 5px;
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: rgb(187, 187, 187);
   font-weight: bold;
   text-transform: uppercase;
   text-align: left;
 }
-.input-area::placeholder{
-  margin: 15px;
-}
-.interaction input[type="email"]:invalid,
-.interaction input[type="text"]:invalid {
+.interaction input[type="email"]:focus:invalid,
+.interaction input[type="text"]:focus:invalid {
   border-color: #900;
 }
-.interaction input[type="email"]:valid,
-.interaction input[type="text"]:valid {
+.interaction input[type="email"]:focus:valid,
+.interaction input[type="text"]:focus:valid {
   border-color: #090;
 }
 .submint {
@@ -173,7 +168,7 @@
   width: 240px;
   height: 66px;
   font-size: 18px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
