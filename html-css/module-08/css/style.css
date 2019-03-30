@@ -75,7 +75,9 @@
 .social-title {
   max-width: auto;
 }
-
+.container-fluid--main{
+  width: 100%;
+}
 .card-title {
   display: block;
   font-size: 22px;
@@ -124,11 +126,13 @@
     max-width: 100%;
   }
   .cards {
-    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .card{
+    max-width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -137,15 +141,21 @@
     background-image: url(../img/header-bg@tablet.jpg);
   }
   .cards {
-    max-width: 35%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-wrap: wrap;
+  }
+  .card{
+    max-width: 35.5%;
   }
 }
 @media (min-width: 980px) {
   .container-fluid--header {
     background-image: url(../img/header-bg@desktop.jpg);
+  }
+  .card{
+    max-width: 25%;
   }
 }
