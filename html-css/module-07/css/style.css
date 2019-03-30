@@ -162,6 +162,10 @@
   justify-content: center;
 }
 .submint {
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #fed136;
   border-radius: 5px;
   border-color: #fed136;
