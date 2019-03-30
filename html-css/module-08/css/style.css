@@ -71,9 +71,11 @@
   border: 1px solid #ff4e50;
   color: #ff4e50;
 }
+
 .social-title {
   max-width: auto;
 }
+
 .card-title {
   display: block;
   font-size: 22px;
@@ -82,10 +84,7 @@
   font-weight: bold;
   text-align: center;
 }
-.cards {
-  max-width: 320px;
-  margin: auto;
-}
+
 .card {
   display: flex;
   justify-content: space-between;
@@ -115,12 +114,21 @@
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   color: rgb(102, 102, 102);
-
   text-align: center;
 }
 @media (min-width: 320px) {
   .container-fluid--header {
     width: 100%;
+  }
+  .container-fluid--main {
+    max-width: 100%;
+  }
+  .cards {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 768px) {
@@ -129,13 +137,11 @@
     background-image: url(../img/header-bg@tablet.jpg);
   }
   .cards {
-    width: 246px;
-    height: 250px;
+    max-width: 35%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
   }
 }
 @media (min-width: 980px) {
