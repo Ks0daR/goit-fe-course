@@ -10,13 +10,20 @@
   margin: auto;
 }
 .autorisation {
-  display: flex;
+  /* display: flex;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: space-between;
-  align-items: baseline;
+  align-items: baseline; */
   padding-top: 1.5rem;
   height: 10rem;
+}
+.logo {
+  text-align: center;
+}
+.btn-container {
+  text-align: center;
 }
 .autorisation-btn {
   background-color: transparent;
@@ -127,9 +134,6 @@
   .container-fluid--header {
     width: 100%;
   }
-  .logo{
-    order: 1;
-  }
   .container-fluid--main {
     max-width: 100%;
   }
@@ -148,10 +152,10 @@
     height: 700px;
     background-image: url(../img/header-bg@tablet.jpg);
   }
-  .logo{
-    order: 0;
-  }
   .autorisation{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     max-width: 748px;
     margin: auto;
   }
