@@ -146,6 +146,7 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: left;
+  padding: 15px;
 }
 .interaction input[type="email"]:focus:invalid,
 .interaction input[type="text"]:focus:invalid {

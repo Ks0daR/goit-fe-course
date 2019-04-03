@@ -10,17 +10,15 @@
   margin: auto;
 }
 .autorisation {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
-  align-content: space-between;
-  align-items: baseline; */
   padding-top: 1.5rem;
   height: 10rem;
 }
 .logo {
   text-align: center;
+  order: 1;
 }
 .btn-container {
   text-align: center;
@@ -98,7 +96,6 @@
   font-weight: bold;
   text-align: center;
 }
-
 .card {
   display: flex;
   justify-content: space-between;
@@ -107,14 +104,52 @@
 }
 .card-img {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.card-link{
+  text-decoration: none;
 }
 .img {
   border-radius: 50%;
 }
-.card-icon {
+.card-icon-bgnd-Bradley {
   position: absolute;
-  right: 0;
+  background-image: url(../img/icon-tv.png);
+  width: 40px;
+  height: 40px;
+  right: 25%;
   bottom: 0;
+  z-index: 10;
+}
+.card-icon-bgnd-lucas {
+  position: absolute;
+  background-image: url(../img/icon-chemical.png);
+  width: 40px;
+  height: 40px;
+  right: 25%;
+  bottom: 0;
+  z-index: 10;
+}
+.card-icon-bgnd-heather {
+  position: absolute;
+  background-image: url(../img/icon-tea.png);
+  width: 40px;
+  height: 40px;
+  right: 25%;
+  bottom: 0;
+  z-index: 10;
+}
+.card-icon-bgnd-hunter {
+  position: absolute;
+  background-image: url(../img/icon-fly.png);
+  width: 40px;
+  height: 40px;
+  right: 25%;
+  bottom: 0;
+  z-index: 10;
 }
 .social-name {
   font-size: 14px;
@@ -154,10 +189,14 @@
   }
   .autorisation{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
     max-width: 748px;
     margin: auto;
+  }
+  .logo{
+    order: 0;
   }
   .cards {
     display: flex;
@@ -205,5 +244,6 @@
 .btn-submint {
   display: flex;
   justify-content: center;
+  padding-top: 2rem;
   margin-bottom: 5rem;
 }
