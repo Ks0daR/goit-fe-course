@@ -1,78 +1,169 @@
-.container-fluid{
-width: auto;
-height: 540px;
-background-image: url(../img/header-bg.jpg);
-background-repeat: no-repeat;
-background-position: top center;
-background-size: cover;
+.container-fluid {
+  width: auto;
+  height: 540px;
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 .container {
-    max-width: 760px;
-    min-width: 320px;
-    height: 540px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-  }
-  .autorisation {
-    padding-top: 15px;
-  }
-  .logo {
-    text-align: center;
-    order: 10;
-  }
-  .btn-container {
-    text-align: center;
-  }
-  .autorisation-btn {
-    background-color: transparent;
-    border: 2px transparent solid;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    padding: 1rem 2.5rem;
-  }
-  .autorisation-btn:hover {
-    border: 2px solid #fff;
-    border-radius: 50px;
-  }
-  .text-content {
-    text-align: center;
-    grid-row-start: 3;
-  }
-  .title {
-    font-size: 30px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  .text {
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-    color: rgb(255, 255, 255);
-  }
-  .btn-text {
-    width: 280px;
-    height: 40px;
-    border-radius: 50px;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    border: 1px solid transparent;
-    cursor: pointer;
-    background-color: transparent;
-  }
-  .btn-text-red {
-    background-color: #ff4e50;
-  }
-  .btn-text-red:hover {
-    background-color: #fff;
-    border: 1px solid #ff4e50;
-    color: #ff4e50;
-  }
+  max-width: 760px;
+  min-width: 320px;
+  height: 540px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.autorisation {
+  padding-top: 15px;
+}
+.logo {
+  text-align: center;
+  order: 10;
+}
+.btn-container {
+  text-align: center;
+}
+.autorisation-btn {
+  background-color: transparent;
+  border: 2px transparent solid;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+}
+.autorisation-btn:hover {
+  border: 2px solid #fff;
+  border-radius: 50px;
+}
+.text-content {
+  text-align: center;
+  grid-row-start: 3;
+}
+.title {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.text {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+}
+.btn-text {
+  width: 280px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: transparent;
+}
+.btn-text-red {
+  background-color: #ff4e50;
+}
+.btn-text-red:hover {
+  background-color: #fff;
+  border: 1px solid #ff4e50;
+  color: #ff4e50;
+}
+.social-title {
+  max-width: auto;
+}
+.card-title {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-align: center;
+}
+.cards {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(5, 1fr);
+}
+.card {
+  display: grid;
+  position: relative;
+  max-width: 320px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 124px 1fr;
+  margin-bottom: 1rem;
+}
+.card-img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.card-link {
+  text-decoration: none;
+}
+.img {
+  border-radius: 50%;
+}
+.card-icon-bgnd-Bradley {
+  position: absolute;
+  background-image: url(../img/icon-tv.png);
+  width: 40px;
+  height: 40px;
+  right: 30%;
+  bottom: 45%;
+  z-index: 10;
+}
+.card-icon-bgnd-lucas {
+  position: absolute;
+  background-image: url(../img/icon-chemical.png);
+  width: 40px;
+  height: 40px;
+  right: 30%;
+  bottom: 45%;
+  z-index: 10;
+}
+.card-icon-bgnd-heather {
+  position: absolute;
+  background-image: url(../img/icon-tea.png);
+  width: 40px;
+  height: 40px;
+  right: 30%;
+  bottom: 45%;
+  z-index: 10;
+}
+.card-icon-bgnd-hunter {
+  position: absolute;
+  background-image: url(../img/icon-fly.png);
+  width: 40px;
+  height: 40px;
+  right: 30%;
+  bottom: 45%;
+  z-index: 10;
+}
+.social-text {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.social-name {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+.social-description {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(102, 102, 102);
+  text-align: center;
+}
