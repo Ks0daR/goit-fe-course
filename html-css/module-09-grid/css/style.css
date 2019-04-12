@@ -9,11 +9,13 @@
 .container {
   max-width: 760px;
   min-width: 320px;
-  height: 540px;
   margin: auto;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-rows: repeat(3, 1fr);
+}
+.container--header {
+  height: 540px;
 }
 .autorisation {
   display: grid;
@@ -45,7 +47,7 @@
 }
 .text-content {
   text-align: center;
-  grid-row-start: 3;
+  grid-row-start: 2;
 }
 .title {
   font-size: 30px;
@@ -79,6 +81,9 @@
   border: 1px solid #ff4e50;
   color: #ff4e50;
 }
+.container--main {
+  height: 100%;
+}
 .social-title {
   max-width: auto;
 }
@@ -94,17 +99,17 @@
   justify-content: center;
 }
 .card {
-  display: grid;
+  display: flex;
   max-width: 320px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 124px 1fr;
   margin-bottom: 1rem;
 }
 .card-img {
   position: relative;
-  grid-column: 2;
 }
 .card-link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   text-decoration: none;
 }
 .img {
@@ -166,45 +171,70 @@
   color: rgb(102, 102, 102);
   text-align: center;
 }
-.btn-submint{
-  display: grid;
+.btn-submint {
+  text-align: center;
+  margin-bottom: 5rem;
 }
-@media(min-width: 768px){
-  .container{
-    grid-template-columns: repeat (5, 20%);
+.btn-text-white {
+  border: 1px solid #ff4e50;
+  color: #ff4e50;
+}
+.btn-text-white:hover {
+  color: #fff;
+  background-color: #ff4e50;
+}
+@media (min-width: 768px) {
+  .container-fluid {
+    height: 700px;
+    background-image: url(../img/header-bg@tablet.jpg);
   }
-  .logo{
+  .container--header {
+    height: 700px;
+  }
+  .logo {
     order: 0;
     grid-column: 1;
   }
-.btn-container{
-  grid-column: 4;
-}
-.text-content{
-  grid-row: 2;
-}
-.title{
+  .btn-container {
+    grid-column: 4;
+  }
+  .text-content {
+    grid-row: 2;
+  }
+  .title {
     font-size: 52px;
     font-family: "Montserrat";
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;  
+    text-align: center;
+  }
+  .autorisation {
+    align-items: baseline;
+  }
+  .cards {
+    grid-template-columns: 50% 50%;
+    align-items: baseline;
+  }
+  .btn-submint {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
-.autorisation{
-  align-items: baseline;
-}
-.cards{
-  grid-template-columns: 50% 50%;
-  align-items: baseline;
-}
-}
-@media(min-width: 940px){
-  .cards{
+@media (min-width: 940px) {
+  .container-fluid {
+    height: 700px;
+    background-image: url(../img/header-bg@desktop.jpg);
+  }
+  .cards {
     grid-template-columns: repeat(4, 25%);
     grid-gap: 1rem;
   }
-.card{
-  max-width: 220px;
-}
+  .card {
+    max-width: 220px;
+  }
+  .btn-submint {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
 }
