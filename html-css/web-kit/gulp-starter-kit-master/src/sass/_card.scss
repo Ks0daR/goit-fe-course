@@ -1,0 +1,11 @@
+.card{
+    max-width: 280px;
+    box-shadow: 2px 2px 2px 2px;
+}
+&__img--wrp{
+    width: 100%;
+}
+&__img{
+    width: 250px;
+    overflow: hidden;
+}
