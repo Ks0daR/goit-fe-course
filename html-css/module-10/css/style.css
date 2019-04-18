@@ -1,0 +1,90 @@
+.containter__fluid {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.container--header {
+  max-width: 1200px;
+  margin: auto;
+  height: 1000px;
+}
+.container--header {
+  padding-top: 2rem;
+}
+.menu__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 13rem;
+}
+.logo {
+  display: flex;
+
+  cursor: pointer;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__item {
+  padding: 0 1.5rem;
+  list-style: none;
+}
+.menu__link {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+}
+.menu__link:hover {
+  color: #fce38a;
+}
+.menu__link::after {
+  content: "";
+  border-bottom: 4px solid #fce38a;
+  width: 100%;
+  margin-top: 14px;
+}
+.menu__link:hover::after {
+  display: block;
+}
+.header-block {
+  margin: auto;
+  margin-bottom: 7rem;
+}
+.header-block__subtitle {
+  font-size: 72px;
+  font-family: "KaushanScript";
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 0;
+}
+.header-block__title {
+  font-size: 150px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  width: 68%;
+}
+.button {
+  text-align: center;
+}
+.button__info {
+  width: 160px;
+  height: 40px;
+  background: transparent;
+  border: 4px solid #fff;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
