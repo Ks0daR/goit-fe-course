@@ -1,13 +1,14 @@
-.containter__fluid {
+.containter--fluid {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
 }
-
-.container--header {
+.container {
   max-width: 1200px;
   margin: auto;
+}
+.container--header {
   height: 1000px;
 }
 .container--header {
@@ -46,11 +47,12 @@
 .menu__link::after {
   content: "";
   border-bottom: 4px solid #fce38a;
-  width: 100%;
+  width: 0%;
+  display: block;
   margin-top: 14px;
 }
 .menu__link:hover::after {
-  display: block;
+  width: 100%;
 }
 .header-block {
   margin: auto;
@@ -77,6 +79,7 @@
   text-align: center;
 }
 .button__info {
+  cursor: pointer;
   width: 160px;
   height: 40px;
   background: transparent;
@@ -86,5 +89,64 @@
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
+}
+.content__subtitle {
+  font-size: 24px;
+  font-family: "KaushanScript";
+  color: rgb(51, 51, 51);
+  text-align: center;
+}
+.content__title {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.content__title::after {
+  content: "";
+  border-bottom: 4px solid #f38181;
+  width: 4rem;
+  margin: auto;
+  display: block;
+  margin-top: 44px;
+}
+.services-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.card{
+  width: 30%;
+  margin: 0 1rem;
+}
+.card__link{
+  display: flex;
+ justify-content: space-around;
+  align-items: flex-start;
+  text-decoration: none;
+}
+.card__img{
+  padding: 0 1rem;
+  width: 32px;
+}
+.card__title{
+  margin: 0;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    text-align: left;
+}
+.text{
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    text-align: left;
+}
+.text--center{
   text-align: center;
 }
