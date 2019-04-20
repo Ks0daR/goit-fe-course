@@ -4,6 +4,11 @@
   background-size: cover;
   width: 100%;
 }
+@media (min-resolution: 192dpi){
+  .containter--fluid {
+  background-image: url(../img/background@2x.jpg);
+  }
+}
 .container {
   max-width: 1200px;
   margin: auto;
@@ -33,6 +38,11 @@
   padding: 0 1.5rem;
   list-style: none;
 }
+.menu__item--icon{
+  fill: #fff;
+  width: 1rem;
+  height: 1rem;
+}
 .menu__link {
   text-decoration: none;
   font-size: 14px;
@@ -60,7 +70,7 @@
 }
 .header-block__subtitle {
   font-size: 72px;
-  font-family: "KaushanScript";
+  font-family: "Kaushan Script";
   color: rgb(255, 255, 255);
   text-align: center;
   margin: 0;
@@ -93,7 +103,7 @@
 }
 .content__subtitle {
   font-size: 24px;
-  font-family: "KaushanScript";
+  font-family: "Kaushan Script";
   color: rgb(51, 51, 51);
   text-align: center;
 }
@@ -119,34 +129,126 @@
   flex-wrap: wrap;
   align-items: baseline;
 }
-.card{
+.card {
   width: 30%;
   margin: 0 1rem;
 }
-.card__link{
+.card__link {
   display: flex;
- justify-content: space-around;
+  justify-content: space-around;
   align-items: flex-start;
   text-decoration: none;
 }
-.card__img{
+.card__img {
   padding: 0 1rem;
   width: 32px;
 }
-.card__title{
+.card__title {
   margin: 0;
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(51, 51, 51);
-    text-transform: uppercase;
-    text-align: left;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  text-align: left;
 }
-.text{
-    font-size: 15px;
-    font-family: "Roboto";
-    color: rgb(153, 153, 153);
-    text-align: left;
+.text {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  text-align: left;
 }
-.text--center{
+.text--center {
   text-align: center;
+  margin-bottom: 100px;
+}
+.teams-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.teams__card {
+  position: relative;
+}
+
+.teams__pad {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: 380px;
+  height: 470px;
+  background-image: linear-gradient(#ef8a8a, #e7d082);
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+.teams__pad--icons {
+  position: absolute;
+  top: 208px;
+  left: 70px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.teams__card:hover .teams__pad {
+  opacity: 0.9;
+}
+.teams__card:hover .teams__pad--icons {
+  opacity: 1;
+}
+.teams__link{
+  text-decoration: none;
+}
+.teams__icon {
+  cursor: pointer;
+  fill: #f38181;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 1rem;
+  background-color: #fce38a;
+  border: none;
+  margin-left: -3px;
+}
+.teams__icon:hover{
+  fill: #fff;
+  background-color: #f38181;
+}
+.teams__name {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  text-align: center;
+}
+.teams__profile {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  text-align: center;
+}
+.container--footer {
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.text-submint {
+  width: 230px;
+  height: 40px;
+  border: 1px solid #e5e5e5;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(204, 204, 204);
+  font-style: italic;
+  text-align: left;
+}
+.btn-submint {
+  width: 150px;
+  height: 44px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  background-color: #95e1d3;
 }
