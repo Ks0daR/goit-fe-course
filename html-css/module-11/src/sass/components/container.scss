@@ -1,0 +1,19 @@
+.containter--fluid {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+      .containter--fluid {
+        background-image: url(../img/background@2x.jpg);
+      }
+  }
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .container--header {
+    height: 1000px;
+    padding-top: 2rem;
+  }
