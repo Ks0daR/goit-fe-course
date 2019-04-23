@@ -1,0 +1,34 @@
+.teams__card {
+    position: relative;
+  }
+  .teams__pad {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 380px;
+    height: 470px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ef8a8a), to(#e7d082));
+    background-image: -webkit-linear-gradient(#ef8a8a, #e7d082);
+    background-image: -o-linear-gradient(#ef8a8a, #e7d082);
+    background-image: linear-gradient(#ef8a8a, #e7d082);
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+  .teams__pad--icons {
+    position: absolute;
+    top: 208px;
+    left: 70px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
+  .teams__card:hover .teams__pad {
+    opacity: 0.9;
+  }
+  .teams__card:hover .teams__pad--icons {
+    opacity: 1;
+  }
+  

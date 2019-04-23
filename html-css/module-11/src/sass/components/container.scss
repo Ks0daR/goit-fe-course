@@ -3,9 +3,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    background-image: url(../images/background.jpg);
     @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
       .containter--fluid {
-        background-image: url(../img/background@2x.jpg);
+        background-image: url(../images/background@2x.jpg);
       }
   }
   }
@@ -16,4 +17,14 @@
   .container--header {
     height: 1000px;
     padding-top: 2rem;
+  }
+  .container--footer {
+    border-top: 1px solid #e5e5e5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px;
   }
