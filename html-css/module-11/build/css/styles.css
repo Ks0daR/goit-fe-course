@@ -375,6 +375,60 @@ template {
   display: none;
 }
 
+.menu__item {
+  list-style: none;
+}
+
+/* roboto-300 - latin */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url("../fonts/roboto-v19-latin-300.woff2") format("woff2"), url("../fonts/roboto-v19-latin-300.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v19-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v19-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/montserrat-v12-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v12-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-v12-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v12-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* kaushan-script-regular - latin */
+
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("../fonts/kaushan-script-v7-latin-regular.woff2") format("woff2"), url("../fonts/kaushan-script-v7-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 .containter--fluid {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
@@ -400,7 +454,7 @@ template {
   padding: 10px;
 }
 
-.menu__line {
+.menu-line {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -414,7 +468,6 @@ template {
 
 .menu__item {
   padding: 0 1.5rem;
-  list-style: none;
 }
 
 .menu__item--icon {
@@ -430,7 +483,7 @@ template {
 .menu__link {
   text-decoration: none;
   font-size: 14px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
@@ -464,7 +517,7 @@ template {
 
 .hero-block__subtitle {
   font-size: 72px;
-  font-family: "Kaushan Script";
+  font-family: "Kaushan Script", sans-serif;
   color: #fff;
   text-align: center;
   margin: 0;
@@ -472,9 +525,8 @@ template {
 
 .hero-block__title {
   font-size: 150px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", bold, sans-serif;
   color: #fff;
-  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
@@ -492,25 +544,23 @@ template {
   background: transparent;
   border: 4px solid #fff;
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", bold, sans-serif;
   color: #fff;
-  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
 
 .content__subtitle {
   font-size: 24px;
-  font-family: "Kaushan Script";
+  font-family: "Kaushan Script", sans-serif;
   color: #333;
   text-align: center;
 }
 
 .content__title {
   font-size: 30px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", bold, sans-serif;
   color: #333;
-  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
@@ -551,7 +601,7 @@ template {
 .card__title {
   margin: 0;
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: #333;
   text-transform: uppercase;
   text-align: left;
@@ -628,7 +678,7 @@ template {
 
 .teams__name {
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: #333;
   text-transform: uppercase;
   text-align: center;
@@ -636,9 +686,8 @@ template {
 
 .teams__profile {
   font-size: 15px;
-  font-family: "Roboto";
+  font-family: "Roboto", italic;
   color: #999;
-  font-style: italic;
   text-align: center;
 }
 
@@ -647,9 +696,8 @@ template {
   height: 40px;
   border: 1px solid #e5e5e5;
   font-size: 15px;
-  font-family: "Roboto";
+  font-family: "Roboto", italic;
   color: #ccc;
-  font-style: italic;
   text-align: left;
 }
 
@@ -657,9 +705,8 @@ template {
   width: 150px;
   height: 44px;
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", bold, sans-serif;
   color: #fff;
-  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   border: none;

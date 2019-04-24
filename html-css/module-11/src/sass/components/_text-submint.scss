@@ -3,8 +3,7 @@
     height: 40px;
     border: 1px solid $primary-light-colour;
     font-size: 15px;
-    font-family: "Roboto";
+    font-family: $title-text-font;
     color: $secondary-light-colour;
-    font-style: italic;
     text-align: left;
   }

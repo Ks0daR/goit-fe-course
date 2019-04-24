@@ -4,16 +4,15 @@
   }
   .hero-block__subtitle {
     font-size: 72px;
-    font-family: "Kaushan Script";
+    font-family: $subtitle-font;
     color: $primary-text-colour;
     text-align: center;
     margin: 0;
   }
   .hero-block__title {
     font-size: 150px;
-    font-family: "Montserrat";
+    font-family: $hero-font;
     color: $primary-text-colour;
-    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
