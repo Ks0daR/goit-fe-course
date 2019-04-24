@@ -1,14 +1,14 @@
 .teams__icon {
     cursor: pointer;
-    fill: #f38181;
+    fill: $primary-red-colour;
     height: 1.5rem;
     width: 1.5rem;
     padding: 1rem;
-    background-color: #fce38a;
+    background-color: $primary-yellow-colour;
     border: none;
     margin-left: -3px;
-  }
-  .teams__icon:hover {
-    fill: #fff;
-    background-color: #f38181;
+    &:hover {
+      fill: $primary-text-colour;
+      background-color: $primary-red-colour;
+    }
   }

@@ -1,5 +1,12 @@
 .teams__card {
     position: relative;
+    
+    &:hover .teams__pad {
+      opacity: 0.9;
+    }
+    &:hover .teams__pad--icons {
+      opacity: 1;
+    }
   }
   .teams__pad {
     position: absolute;
@@ -8,9 +15,9 @@
     width: 380px;
     height: 470px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ef8a8a), to(#e7d082));
-    background-image: -webkit-linear-gradient(#ef8a8a, #e7d082);
-    background-image: -o-linear-gradient(#ef8a8a, #e7d082);
-    background-image: linear-gradient(#ef8a8a, #e7d082);
+    background-image: -webkit-linear-gradient($start-gradient-colour, $end-gradient-colour);
+    background-image: -o-linear-gradient($start-gradient-colour, $end-gradient-colour);
+    background-image: linear-gradient($start-gradient-colour, $end-gradient-colour);
     -webkit-transition: opacity 0.5s;
     -o-transition: opacity 0.5s;
     transition: opacity 0.5s;
@@ -24,11 +31,5 @@
     -webkit-transition: opacity 0.5s;
     -o-transition: opacity 0.5s;
     transition: opacity 0.5s;
-  }
-  .teams__card:hover .teams__pad {
-    opacity: 0.9;
-  }
-  .teams__card:hover .teams__pad--icons {
-    opacity: 1;
   }
   
