@@ -1,157 +1,159 @@
-.container-header{
-    background-image: url(../images/header-bg.jpg);
-    background-size: cover;
-    height: 540px;
+
+.container-fluid {
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  height: 540px;
 }
 .autorisation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 1.5rem;
-    height: 10rem;
-  }
-  .logo {
-    text-align: center;
-    order: 1;
-  }
-  .btn-container {
-    text-align: center;
-  }
-  .autorisation-btn {
-    background-color: transparent;
-    border: 2px transparent solid;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    padding: 1rem 2.5rem;
-  }
-  .autorisation-btn:hover {
-    border: 2px solid #fff;
-    border-radius: 50px;
-  }
-  ..text-content {
-    text-align: center;
-  }
-  .subtitle {
-    width: 50%;
-    font-size: 20px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
+  height: 10rem;
+}
+.btn-container {
+  text-align: center;
+}
+.autorisation-btn {
+  background-color: transparent;
+  border: 2px transparent solid;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+}
+.autorisation-btn:hover {
+  border: 2px solid #fff;
+  border-radius: 50px;
+}
+
+.title {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.text {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+}
+.btn-text {
+  width: 280px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: transparent;
+}
+.btn-text-red {
+  background-color: #ff4e50;
+}
+.btn-text-red:hover {
+  background-color: #fff;
+  border: 1px solid #ff4e50;
+  color: #ff4e50;
+}
+.fix{
+  margin-right: 0 !important;
+}
+.card-title {
+  display: block;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+}
+.card {
+  max-width: 300px;
+  border: none !important;
+  margin: auto;
+  height: 300px;
+}
+.card-img {
+  position: relative;
+}
+.card-link {
+  text-decoration: none;
+}
+.img {
+  border-radius: 50%;
+}
+.card-icon-bgnd-Bradley {
+  position: absolute;
+  background-image: url(../images/icon-tv.png);
+  width: 40px;
+  height: 40px;
+  right: 25%;
+  bottom: 0;
+  z-index: 10;
+}
+.card-icon-bgnd-lucas {
+  position: absolute;
+  background-image: url(../images/icon-chemical.png);
+  width: 40px;
+  height: 40px;
+  right: 25%;
+  bottom: 0;
+  z-index: 10;
+}
+.card-icon-bgnd-heather {
+  position: absolute;
+  background-image: url(../images/icon-tea.png);
+  width: 40px;
+  height: 40px;
+  right: 25%;
+  bottom: 0;
+  z-index: 10;
+}
+.card-icon-bgnd-hunter {
+  position: absolute;
+  background-image: url(../images/icon-fly.png);
+  width: 40px;
+  height: 40px;
+  right: 25%;
+  bottom: 0;
+  z-index: 10;
+}
+.social-name {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+}
+.social-description {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(102, 102, 102);
+}
+.btn-white {
+  color: #ff4e50;
+  border: #ff4e50 1px solid;
+}
+.btn-white:hover {
+  color: #fff;
+  background: #ff4e50;
+}
+.btn-submint {
+  margin-bottom: 5rem;
+}
+@media(min-width:748px){
+  .container-fluid {
+    background-image: url(../images/header-bg@tablet.jpg);
+    background-size: cover;
+    height: 700px;
   }
   .title {
-    font-size: 30px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
-  }
+    font-size: 52px;
+  }  
   .text {
-    font-size: 18px;
+    font-size: 24px;
     font-family: "Roboto", sans-serif;
     color: rgb(255, 255, 255);
-  }
-  .btn-text {
-    width: 280px;
-    height: 40px;
-    border-radius: 50px;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    border: 1px solid transparent;
-    cursor: pointer;
-    background-color: transparent;
-  }
-  .btn-text-red {
-    background-color: #ff4e50;
-  }
-  .btn-text-red:hover {
-    background-color: #fff;
-    border: 1px solid #ff4e50;
-    color: #ff4e50;
-  }
-  .card-title {
-    display: block;
-    font-size: 22px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-  }
-.card{
-    border: none !important;
-    
+  }  
 }
-  .card-img {
-    position: relative;
-  }
-  .card-link{
-    text-decoration: none;
-  }
-  .img {
-    border-radius: 50%;
-  }
-  .card-icon-bgnd-Bradley {
-    position: absolute;
-    background-image: url(../images/icon-tv.png);
-    width: 40px;
-    height: 40px;
-    right: 25%;
-    bottom: 0;
-    z-index: 10;
-  }
-  .card-icon-bgnd-lucas {
-    position: absolute;
-    background-image: url(../images/icon-chemical.png);
-    width: 40px;
-    height: 40px;
-    right: 25%;
-    bottom: 0;
-    z-index: 10;
-  }
-  .card-icon-bgnd-heather {
-    position: absolute;
-    background-image: url(../images/icon-tea.png);
-    width: 40px;
-    height: 40px;
-    right: 25%;
-    bottom: 0;
-    z-index: 10;
-  }
-  .card-icon-bgnd-hunter {
-    position: absolute;
-    background-image: url(../images/icon-fly.png);
-    width: 40px;
-    height: 40px;
-    right: 25%;
-    bottom: 0;
-    z-index: 10;
-  }
-  .social-name {
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    line-height: 1.2;
-  }
-  .social-description {
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    color: rgb(102, 102, 102);
-  }
-  .btn-white {
-    color: #ff4e50;
-    border: #ff4e50 1px solid;
-  }
-  .btn-white:hover {
-    color: #fff;
-    background: #ff4e50;
-  }
-  .btn-submint {
-    padding-top: 2rem;
-    margin-bottom: 5rem;
-  }
