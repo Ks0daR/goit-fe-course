@@ -19,7 +19,7 @@
   font-weight: bold;
   text-align: center;
   cursor: pointer;
-  padding: 1rem 2.5rem;
+  padding: 1rem 2.3rem;
 }
 .autorisation-btn:hover {
   border: 2px solid #fff;
@@ -142,10 +142,9 @@
 .btn-submint {
   margin-bottom: 5rem;
 }
-@media(min-width:748px){
+@media(min-width:768px){
   .container-fluid {
     background-image: url(../images/header-bg@tablet.jpg);
-    background-size: cover;
     height: 700px;
   }
   .title {
@@ -156,4 +155,12 @@
     font-family: "Roboto", sans-serif;
     color: rgb(255, 255, 255);
   }  
+  .autorisation-btn {
+    padding: 1rem 2.5rem;
+  }
+}
+@media(min-width:992px){
+  .container-fluid {
+    background-image: url(../images/header-bg@desktop.jpg);
+  }
 }
