@@ -12,10 +12,11 @@
   text-align: center;
 }
 .works {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
+  display: flex;
+  flex-wrap: wrap;
 }
 .work-list {
+  width: 20%;
   padding: 1rem;
   list-style: none;
   border-radius: 50px;
